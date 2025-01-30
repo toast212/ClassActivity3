@@ -1,58 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="200"
         android:layout_height="50"
         android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
         android:hint="Enter your name"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="200"
         android:layout_height="50"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
         android:hint="Enter your age"
         android:paddingHorizontal="5dp"
         android:paddingVertical="5dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"></TextView>
+        android:textSize="20sp"></TextView>
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="200"
         android:layout_height="50"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
         android:hint="Enter your email"
         android:paddingHorizontal="5dp"
         android:paddingVertical="5dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        tools:layout_editor_absoluteY="191dp"></TextView>
+        android:textSize="20sp"></TextView>
 
     <TextView
         android:layout_width="200"
-        android:layout_height="50"
+        app:iconSize="20dp"        android:layout_height="50"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
         android:hint="Enter your password"
         android:paddingHorizontal="5dp"
         android:paddingVertical="5dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        tools:layout_editor_absoluteY="274dp"></TextView>
+        android:textSize="20sp"></TextView>
 
     <Button
         android:layout_width="100"
@@ -62,7 +51,6 @@
         android:paddingHorizontal="5dp"
         android:paddingVertical="5dp"
         android:text="Sign Up"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="375dp"></Button>
+        ></Button>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
